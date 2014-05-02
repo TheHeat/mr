@@ -1,0 +1,75 @@
+// content structure is .content-wrapper > .content > ( .content-header .show-content .content-full )
+
+.content-wrapper{
+	position:absolute;
+	top:0;
+	right:10%;
+	bottom:0;
+	left: 10%;
+	overflow:hidden;
+	pointer-events: none;
+	z-index:10;
+}
+
+.content{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	@include colors-content;
+	pointer-events: auto;
+}
+
+.content-header{
+	position:relative;
+	padding:1em 1em 0;
+	h1{
+		margin:0;
+		font-weight:300;
+	}
+
+}
+.content-full{
+	padding:0 1em 1em;
+	transition:0.3s;
+	input[type=checkbox] ~ &{
+		max-height:0;
+		overflow:hidden;
+	}
+	input[type=checkbox]:checked ~ &{
+		max-height:20em;
+		overflow-y:auto;
+	}
+
+}
+
+
+// Content toggle setup.
+// The label in the header triggers the hidden checkbox
+
+// The checkbox
+
+.show-content{
+	display:none;
+}
+
+// The label
+.content-toggle{
+	border-radius:50%;
+	@include colors-blue;
+	display:block;
+	width:2em;
+	height:2em;
+	line-height:2;
+	text-align:center;
+	position:absolute;
+	z-index:11;
+	right:1em;
+	top:1em;
+	cursor: pointer;
+}
+.credit{
+	@include colors-orange;
+	padding:0.5em;
+}
+

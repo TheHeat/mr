@@ -1,0 +1,33 @@
+$color-ground: rgb(0, 32, 50);
+$color-text: #ffffff;
+
+$color-blue: #8ac1af;
+$color-orange: #dd773f;
+$color-yellow: rgb(237, 220, 75);
+
+$brand-stripe: linear-gradient(to right, $color-blue, $color-blue 33.33%, $color-yellow 33.33%, $color-yellow 66.66%, $color-orange 66.66%);
+
+@mixin colors-blue{
+	background-color:$color-blue;
+	color:$color-text;
+}
+
+@mixin colors-orange{
+	background-color:$color-orange;
+	color:$color-text;
+}
+
+@mixin colors-content{
+	background:$color-text;
+	color:$color-ground;
+}
+
+::selection{
+	@include colors-blue
+}
+
+body{
+	background-color: $color-ground;
+	color:$color-text;
+}
+

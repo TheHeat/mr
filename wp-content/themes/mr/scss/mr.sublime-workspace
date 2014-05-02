@@ -1,0 +1,708 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"push",
+				"push-menu"
+			],
+			[
+				"term",
+				"termslug"
+			],
+			[
+				"grade",
+				"grades"
+			],
+			[
+				"sys",
+				"system"
+			],
+			[
+				"bou",
+				"bouldering_boulders"
+			],
+			[
+				"climbing_",
+				"climbing_yds"
+			],
+			[
+				"clim",
+				"climbing_french"
+			],
+			[
+				"cimbing",
+				"climbing_french"
+			],
+			[
+				"th",
+				"theColour"
+			],
+			[
+				"printr",
+				"print_r"
+			],
+			[
+				"get_a",
+				"get_avatar"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"get_page_by",
+				"get_page_by_title"
+			],
+			[
+				"have",
+				"have_posts"
+			],
+			[
+				"page",
+				"page_details"
+			],
+			[
+				"wp_ins",
+				"wp_insert_post"
+			],
+			[
+				"site",
+				"site_option_"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"banner",
+				"banner_vid"
+			],
+			[
+				"the_t",
+				"the_title"
+			],
+			[
+				"the",
+				"theloop	The Loop"
+			],
+			[
+				"blo",
+				"bloginfo"
+			],
+			[
+				"get_the_ti",
+				"get_the_title"
+			],
+			[
+				"has_post",
+				"has_post_thumbnail"
+			],
+			[
+				"get_template",
+				"get_template_part"
+			],
+			[
+				"the_po",
+				"the_post_thumbnail"
+			],
+			[
+				"edit_po",
+				"edit_post_link"
+			],
+			[
+				"ed",
+				"edit_link"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/wamp/www/marcrees/config.rb",
+			"settings":
+			{
+				"buffer_size": 839,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "style.scss",
+			"settings":
+			{
+				"buffer_size": 82,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"br",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"bro",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"pas",
+				"Text Pastry: From 1 To X"
+			],
+			[
+				"pastry",
+				"Text Pastry: From 1 To X"
+			],
+			[
+				"pastr",
+				"Text Pastry: From 0 To X"
+			],
+			[
+				"past",
+				"Text Pastry: From 0 To X"
+			],
+			[
+				"pasty",
+				"Text Pastry: From 0 To X"
+			],
+			[
+				"text",
+				"Text Pastry: From 0 To X"
+			],
+			[
+				"fet",
+				"Fetch: Package"
+			],
+			[
+				"synph",
+				"Set Syntax: PHP"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"BR",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"man",
+				"Fetch: Manage"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"syn",
+				"Set Syntax: HTML"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser-child/sass/style.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/style.scss",
+		"/C/wamp/www/climbapp/css/styles.css",
+		"/C/wamp/www/climbapp/wp-admin/network/site-themes.php",
+		"/C/wamp/www/climbapp/sftp-config.json",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/sass/_buttons.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/sass/_breadcrumbs.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/sass/_navigation.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/navigation-slide.php",
+		"/C/wamp/www/climbapp/index.html",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/sass/_colours.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/sass/_page-structure.scss",
+		"/C/wamp/www/sorriso/wp/wp-content/themes/sorriso/sass/_layout.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser-child/sass/_breadcrumbs.scss",
+		"/C/wamp/www/climbapp/wp-includes/css/buttons.css",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/comments.php",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/inc/climbrs-functions.php",
+		"/C/wamp/www/climbapp/wp-admin/css/colors/light/colors.css",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/.sass-cache/d2e25c8d765aa73e40b85df3907f78a825ac28a3/_link-colors.scssc",
+		"/C/wamp/www/climbapp/wp-includes/class-wp-http-ixr-client.php",
+		"/C/wamp/www/climbapp/images/climbrs-logo.svg",
+		"/C/wamp/www/climbapp/wp-admin/css/color-picker-rtl.css",
+		"/C/wamp/www/climbapp/wp-includes/js/colorpicker.min.js",
+		"/C/wamp/www/climbapp/wp-admin/js/color-picker.js",
+		"/C/wamp/www/climbapp/wp-admin/css/colors.min.css",
+		"/C/wamp/www/climbapp/wp-admin/css/colors-rtl.css",
+		"/C/wamp/www/climbapp/wp-admin/css/color-picker.css",
+		"/C/wamp/www/climbapp/wp-includes/js/colorpicker.js",
+		"/C/wamp/www/climbapp/wp-admin/css/colors.css",
+		"/C/wamp/www/climbapp/wp-includes/class-oembed.php",
+		"/C/wamp/www/climbapp/wp-includes/bookmark.php",
+		"/C/users/marc/appdata/local/temp/sublime-sftp-browse-1396362447/mapped/httpdocs/.htaccess",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/inc/types-and-taxes.php",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/single-route.php",
+		"/C/Users/Marc/Google Drive/Climb.rs/Marketing/splashpage/index.html.mcw",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/inc/climbrs-grades.php",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/.sass-cache/d3fb4485b34b02b28a75dc5ebb060f6c9f85dff9/_colours.scssc",
+		"/C/users/marc/appdata/local/temp/sublime-sftp-browse-1396360967/mapped/httpdocs/.htaccess",
+		"/C/users/marc/appdata/local/temp/sublime-sftp-browse-1396360894/mapped/httpdocs/.htaccess",
+		"/C/Users/Marc/Google Drive/Climb.rs/Marketing/splashpage/index.html/index.html",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/functions.php",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/single-line.php",
+		"/C/Users/Marc/Desktop/iterator.html",
+		"/C/wamp/www/climbapp/wp-trackback.php",
+		"/C/wamp/www/climbapp/wp-admin/theme-editor.php",
+		"/C/wamp/www/climbapp/wp-content/plugins/advanced-custom-fields/core/fields/text.php",
+		"/C/Users/Marc/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/page-add-route.php",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/content-route.php",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/sass/_lists.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/page-areas.php",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/front-page.php",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/taxonomy-areas.php",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/page-reports.php",
+		"/C/Users/Marc/AppData/Roaming/Sublime Text 3/Packages/Emmet/Default (Windows).sublime-keymap",
+		"/C/wamp/www/climbapp/wp-includes/js/wp-lists.js",
+		"/C/wamp/www/climbapp/license.txt",
+		"/C/wamp/www/climbapp/wp-admin/plugins.php",
+		"/C/wamp/www/climbapp/wp-includes/feed-rss2-comments.php",
+		"/C/wamp/www/climbapp/wp-content/plugins/advanced-custom-fields/core/fields/relationship.php",
+		"/C/wamp/www/climbapp/wp-includes/formatting.php",
+		"/C/wamp/www/climbapp/wp-includes/feed-rdf.php",
+		"/C/wamp/www/climbapp/wp-admin/freedoms.php",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser-child/content-route.php",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/content.php",
+		"/C/wamp/www/climbapp/wp-includes/js/customize-loader.js",
+		"/C/wamp/www/climbapp/wp-includes/js/tinymce/utils/form_utils.js",
+		"/C/wamp/www/climbapp/wp-includes/functions.php",
+		"/C/wamp/www/climbapp/wp-includes/functions.wp-styles.php",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/inc/classes/AppPresser_App_Functionality.php",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser-child/single-line.php",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/single.php",
+		"/C/wamp/www/climbapp/wp-includes/js/wp-list-revisions.js",
+		"/C/wamp/www/climbapp/wp-content/plugins/posts-to-posts/core/list-renderer.php",
+		"/C/wamp/www/climbapp/wp-content/plugins/posts-to-posts/core/list.php",
+		"/C/wamp/www/climbapp/wp-admin/includes/list-table.php",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/sass/style.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/bootstrap/_scaffolding.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/bootstrap/_print.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/bootstrap/_popovers.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/bootstrap/_panels.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/bootstrap/_pagination.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/bootstrap/_pager.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/bootstrap/_normalize.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/bootstrap/_navs.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/bootstrap/_navbar.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/bootstrap/_modals.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/bootstrap/_mixins.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/bootstrap/_media.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/bootstrap/_labels.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/bootstrap/_jumbotron.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/bootstrap/_grid.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/bootstrap/_glyphicons.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/bootstrap/_forms.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/bootstrap/_dropdowns.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/bootstrap/_code.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/bootstrap/_close.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/bootstrap/_carousel.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/bootstrap/_buttons.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/bootstrap/_breadcrumbs.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/bootstrap/_badges.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/bootstrap/_alerts.scss",
+		"/C/wamp/www/climbapp/wp-content/plugins/apppresser/css/smoothness/smoothness.custom.css",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/layouts/content-sidebar.css",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/sass/_normalize.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/sass/_header.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/sass/_fonts.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/layouts/sidebar-content.css",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser-child/sass/_normalize.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser-child/sass/_branding.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/_structure.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/_normalize.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/_mixins.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/_content.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/_comments.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/dev/_base.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser/editor-style.css",
+		"/C/wamp/www/climbapp/wp-content/plugins/show-current-template/style-old.css",
+		"/C/wamp/www/climbapp/wp-admin/css/colors/_variables.scss",
+		"/C/wamp/www/climbapp/wp-admin/css/colors/_mixins.scss",
+		"/C/wamp/www/climbapp/wp-admin/css/colors/_admin.scss",
+		"/C/wamp/www/climbapp/wp-content/themes/climbrs-centre/.sass-cache/d3fb4485b34b02b28a75dc5ebb060f6c9f85dff9/style.scssc",
+		"/C/wamp/www/climbapp/wp-content/themes/apppresser-child/.sass-cache/2c994ac3f2c3e19e5135b72fa628176228e1a2f5/style.scssc",
+		"/C/wamp/www/climbapp/wp-content/plugins/wp-migrate-db-pro/asset/css/styles.css",
+		"/C/wamp/www/climbapp/wp-admin/css/colors/sunrise/colors.scss",
+		"/C/wamp/www/climbapp/wp-admin/css/colors/ocean/colors.scss",
+		"/C/wamp/www/climbapp/wp-admin/css/colors/midnight/colors.scss",
+		"/C/wamp/www/climbapp/wp-admin/css/colors/light/colors.scss"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"@import:",
+			"import",
+			"text-alig",
+			"CURRENT",
+			"more",
+			"$systemarray",
+			"\"system\" =>",
+			"			",
+			"\",",
+			"array( \"system\" => \"hueco\", \"index\" => ",
+			"\"),",
+			"array( \"system\" => \"font\", \"index\" =>",
+			"\"\",",
+			"array( \"system\" => \"ewbank\", \"index\" =>",
+			"array( \"system\" => \"yds\", \"index\" =>",
+			"d",
+			"array( \"system\" => \"yds\", \"index\" =>",
+			"array( \"system\" => \"french\", \"index\" => ",
+			"climbrs_grade_create_terms",
+			"\"index\" =>",
+			"\"\"",
+			"\"index\"",
+			"\"\",",
+			"\"index\" =>",
+			"\"\"",
+			"\"index\"",
+			"\"\",",
+			"\"grade\"",
+			"\"),		",
+			"\"\"",
+			"countries",
+			"\"name\"",
+			"	\"),",
+			"\"),",
+			"	\"),",
+			"\"\" => ",
+			"\"\"  => ",
+			"\"\" =>",
+			"	\"),",
+			"5.",
+			"\"      =>",
+			"\"\" =>",
+			"\"),        \"\"",
+			"$country",
+			"climbrs_grade_country",
+			"wp_cc_tax",
+			"wp_cc_tax_default_terms",
+			"wp_cc_tax_country",
+			"wp_cc_tax_custom_taxonomy",
+			"htmlspecialchars($_GET['start_date'])",
+			"htmlspecialchars($_GET['routesetter'])",
+			"htmlspecialchars($_GET['grade']",
+			"addRoute",
+			"#006567",
+			"#008284",
+			"blue",
+			"'/'",
+			"my_",
+			"cptui_",
+			".html",
+			"]",
+			"@import",
+			"action_button",
+			"$post_object",
+			"$posts",
+			"transition:1s;"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/wamp/www/marcrees/config.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 839,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								170,
+								170
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "style.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 82,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								82,
+								82
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 124.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 145.0
+	},
+	"project": "mr.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"bread",
+				"wp-content\\themes\\climbrs-centre\\sass\\_breadcrumbs.scss"
+			],
+			[
+				"climcol",
+				"wp-content\\themes\\climbrs-centre\\sass\\_colours.scss"
+			],
+			[
+				"climbutt",
+				"wp-content\\themes\\climbrs-centre\\sass\\_buttons.scss"
+			],
+			[
+				"butt",
+				"wp-includes\\css\\buttons.css"
+			],
+			[
+				"colou",
+				"wp-content\\themes\\climbrs-centre\\sass\\_colours.scss"
+			],
+			[
+				"singl",
+				"wp-content\\themes\\climbrs-centre\\single-route.php"
+			],
+			[
+				"lists",
+				"wp-content\\themes\\climbrs-centre\\sass\\_lists.scss"
+			],
+			[
+				"page-report",
+				"wp-content\\themes\\climbrs-centre\\page-reports.php"
+			],
+			[
+				"page-area",
+				"wp-content\\themes\\climbrs-centre\\page-areas.php"
+			],
+			[
+				"conterou",
+				"wp-content\\themes\\climbrs-centre\\content-route.php"
+			],
+			[
+				"clifun",
+				"wp-content\\themes\\climbrs-centre\\inc\\climbrs-functions.php"
+			],
+			[
+				"singlelin",
+				"wp-content\\themes\\climbrs-centre\\single-line.php"
+			],
+			[
+				"ta",
+				"wp-content\\themes\\climbrs-centre\\taxonomy-areas.php"
+			],
+			[
+				"list",
+				"wp-content\\themes\\climbrs-centre\\sass\\_lists.scss"
+			],
+			[
+				"climfunc",
+				"wp-content\\themes\\climbrs-centre\\inc\\climbrs-functions.php"
+			],
+			[
+				"sing",
+				"wp-content\\themes\\climbrs-centre\\single-route.php"
+			],
+			[
+				"content-rout",
+				"wp-content\\themes\\climbrs-centre\\content-route.php"
+			],
+			[
+				"content-",
+				"wp-content\\themes\\apppresser-child\\content-route.php"
+			],
+			[
+				"brea",
+				"wp-content\\themes\\climbrs-centre\\sass\\_breadcrumbs.scss"
+			],
+			[
+				"",
+				"wp-content\\themes\\climbrs-centre\\taxonomy-areas.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\wamp\\www\\theatrecafe\\theatrecafe.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 412.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

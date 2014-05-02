@@ -13,7 +13,7 @@
 	    <header class="content-header">
 	      <label class="content-toggle" for="show-content">i</label>
 	      <h1 class="page-title"><?php the_title(); ?></h1>
-	      <!-- Production date - ACF datepicker Field maybe only show year?? Will discuss with Marc R-->
+
 	      <div class="date">
 	      	<?php
 	      	$date = get_field('project_date');
@@ -21,7 +21,7 @@
 	      	echo $date;
 	      	?>
 	      </div>
-	      <!-- Production credit - probably just a text field -->
+
 	      <p class="credit">
 	      	<?php
 	      	the_field('project_credits');

@@ -100,7 +100,7 @@ function mr_scripts() {
 
 	if (is_singular('project')){
 		wp_enqueue_script( 'galleria', get_template_directory_uri() . '/js/galleria/galleria-1.3.min.js', array('jquery'), '20120206', true );
-		wp_enqueue_script( 'theme-scripts', get_template_directory_uri() . '/js/theme-scripts.js', array(), '20130115', true );
+		// wp_enqueue_script( 'theme-scripts', get_template_directory_uri() . '/js/theme-scripts.js', array(), '20130115', true );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'mr_scripts' );

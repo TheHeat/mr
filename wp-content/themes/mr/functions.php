@@ -130,3 +130,49 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+add_action( 'init', 'register_cpt_project' );
+
+function register_cpt_project() {
+
+    $labels = array( 
+        'name' => _x( 'Projects', 'project' ),
+        'singular_name' => _x( 'Project', 'project' ),
+        'add_new' => _x( 'Add New', 'project' ),
+        'add_new_item' => _x( 'Add New Project', 'project' ),
+        'edit_item' => _x( 'Edit Project', 'project' ),
+        'new_item' => _x( 'New Project', 'project' ),
+        'view_item' => _x( 'View Project', 'project' ),
+        'search_items' => _x( 'Search Projects', 'project' ),
+        'not_found' => _x( 'No projects found', 'project' ),
+        'not_found_in_trash' => _x( 'No projects found in Trash', 'project' ),
+        'parent_item_colon' => _x( 'Parent Project:', 'project' ),
+        'menu_name' => _x( 'Projects', 'project' ),
+    );
+
+    $args = array( 
+        'labels' => $labels,
+        'hierarchical' => false,
+        
+        'supports' => array( 'title', 'editor' ),
+        
+        'public' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        
+        
+        'show_in_nav_menus' => true,
+        'publicly_queryable' => true,
+        'exclude_from_search' => false,
+        'has_archive' => true,
+        'query_var' => true,
+        'can_export' => true,
+        'rewrite' => array( 'slug' => 'projects' ),
+        'capability_type' => 'post'
+    );
+
+    register_post_type( 'project', $args );
+}
+add_filter('wp_list_pages', 'new_nav_menu_items');
+
+

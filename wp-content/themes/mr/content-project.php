@@ -18,12 +18,13 @@
 	      	<?php
 	      	$date = get_field('project_date');
 	      	$date = date('m YY', strtotime($date));
+	      	echo $date;
 	      	?>
 	      </div>
 	      <!-- Production credit - probably just a text field -->
 	      <p class="credit">
 	      	<?php
-	      	get_field('project_credits');
+	      	the_field('project_credits');
 	      	?>
 	      </p>   
 	    </header>

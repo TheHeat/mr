@@ -10,19 +10,22 @@ get_header(); ?>
 
 	<?php while ( have_posts() ) : the_post(); ?>
 
-		<div class="galleria-wrapper">
+	<div class="galleria-wrapper">
 	      <div class="galleria">
-	        <img src="images/galleriatest/rawmaterial_01.jpg" alt="">
-	        <img src="images/galleriatest/rawmaterial_02.jpg" alt="">
-	        <img src="images/galleriatest/rawmaterial_03.jpg" alt="">
-	        <img src="images/galleriatest/rawmaterial_04.jpg" alt="">
-	        <img src="images/galleriatest/rawmaterial_05.jpg" alt="">
-	        
-	        <a href="http://vimeo.com/89667066"><img src="images/galleriatest/rawmaterial_06.jpg"></a>
+			<?php
+				//get the galler field
+				$the_gallery = get_field('project_gallery');
 
-	      </div>
-	    </div>
-
+				//echo an image for each image in teh gallery
+				foreach ($the_gallery as $image) {
+					$url = $image['url'];
+					echo '<img src="' . $url . '" alt="">';
+				}
+			?>
+		
+			</div> <!-- galleria -->
+	    </div> <!-- galleria-wrapper -->
+	
 		<?php get_template_part( 'content', 'project' ); ?>
 
 		<?php 
@@ -31,7 +34,4 @@ get_header(); ?>
 
 	<?php endwhile; // end of the loop. ?>
 
-
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

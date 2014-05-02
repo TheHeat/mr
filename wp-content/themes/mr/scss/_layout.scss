@@ -2,11 +2,15 @@
 	@include box-sizing(border-box);
 }
 @mixin media($size){
+	
 	@if $size == momma{
 		@media screen and (min-width: 600px){ @content }	
 	}
 	@else if $size == poppa{
 		@media screen and (min-width: 800px){ @content }
+	}
+	@else if $size == shorty{
+		@media screen and (max-height:30em){ @content }
 	}
 }
 

@@ -15,6 +15,13 @@
 		bottom:0;
 		left:0;
 	}
+
+	@include media(shorty){
+		position:relative;
+		top:0;
+		height:0;
+		padding-bottom:56.25%;
+	}
 }
 .galleria{
 	position:absolute;

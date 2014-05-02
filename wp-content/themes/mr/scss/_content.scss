@@ -1,8 +1,7 @@
 // content structure is .content-wrapper > .content > ( .content-header .show-content .content-full )
 
 .content-wrapper{
-
-
+	
 
 	@include media(momma){
 		position:absolute;
@@ -13,6 +12,10 @@
 		overflow:hidden;
 		pointer-events: none;
 		z-index:4;
+	}
+
+	@include media(shorty){
+		position:static;
 	}
 }
 
@@ -27,6 +30,12 @@
 		right:0;
 
 	}
+	
+	@include media(shorty){
+		position:static;
+	}
+	
+
 }
 
 .content-header{
@@ -38,21 +47,38 @@
 	}
 
 }
+
+@mixin opencontent{
+	max-height:1200em;
+	overflow:hidden;
+}
+
 .content-full{
 	padding:0 1em 1em;
 	transition:0.3s;
+
+	
 	
 	@include media(momma){
+		max-height:20em;
+
 		input[type=checkbox] ~ &{
 		max-height:0;
 		overflow:hidden;
+
+			@include media(shorty){
+				@include opencontent;
+			}
+
+
 		}
 		input[type=checkbox]:checked ~ &{
 			max-height:20em;
 			overflow-y:auto;
 
-			
-
+			@include media(shorty){
+				@include opencontent;
+			}
 		}
 	}
 
@@ -88,6 +114,9 @@
 	@include media(momma){
 		display:block;
 		top:1em;
+		@include media(shorty){
+			display:none;
+		}
 	}
 }
 

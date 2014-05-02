@@ -17,7 +17,7 @@
 	      <div class="date">
 	      	<?php
 	      	$date = get_field('project_date');
-	      	$date = date('m YY', strtotime($date));
+	      	$date = date('F Y', strtotime($date));
 	      	echo $date;
 	      	?>
 	      </div>

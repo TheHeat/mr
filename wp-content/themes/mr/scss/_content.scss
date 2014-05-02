@@ -50,6 +50,9 @@
 		input[type=checkbox]:checked ~ &{
 			max-height:20em;
 			overflow-y:auto;
+
+			
+
 		}
 	}
 
@@ -72,7 +75,6 @@
 	bottom:1em;
 
 	transition:2s;
-	transform:rotate(360deg);
 	border-radius:50%;
 	@include colors-blue;
 	width:2em;
@@ -87,10 +89,6 @@
 		display:block;
 		top:1em;
 	}
-}
-
-.content-toggle[checked]{
-	transform:rotate(180deg);
 }
 
 .credit{

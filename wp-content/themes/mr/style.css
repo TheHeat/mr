@@ -588,17 +588,16 @@ header.site-header {
       max-height: 20em;
       overflow-y: auto; } }
 
-/* line 64, scss/_content.scss */
+/* line 67, scss/_content.scss */
 .show-content {
   display: none; }
 
-/* line 69, scss/_content.scss */
+/* line 72, scss/_content.scss */
 .content-toggle {
   position: absolute;
   right: 1em;
   bottom: 1em;
   transition: 2s;
-  transform: rotate(360deg);
   border-radius: 50%;
   background-color: #8ac1af;
   color: white;
@@ -610,16 +609,12 @@ header.site-header {
   cursor: pointer;
   display: none; }
   @media screen and (min-width: 600px) {
-    /* line 69, scss/_content.scss */
+    /* line 72, scss/_content.scss */
     .content-toggle {
       display: block;
       top: 1em; } }
 
-/* line 92, scss/_content.scss */
-.content-toggle[checked] {
-  transform: rotate(180deg); }
-
-/* line 96, scss/_content.scss */
+/* line 94, scss/_content.scss */
 .credit {
   background-color: #dd773f;
   color: white;

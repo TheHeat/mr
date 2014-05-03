@@ -13,10 +13,8 @@
 
 get_header(); ?>
 
-<div class="content-wrapper">
-	<main class="content">
-		<?php get_template_part('content', 'single' ); ?>
-	</main>
+<div class="feed">
+		<?php get_template_part('content'); ?>
 </div>
 
 

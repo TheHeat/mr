@@ -633,8 +633,8 @@ header.site-header {
 /* line 108, scss/_content.scss */
 .content-toggle {
   position: absolute;
-  right: 1em;
-  bottom: 1em;
+  right: 0;
+  bottom: 0;
   transition: 2s;
   border-radius: 50%;
   background-color: #8ac1af;

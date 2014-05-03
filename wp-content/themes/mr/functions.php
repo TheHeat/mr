@@ -165,4 +165,17 @@ function register_cpt_project() {
 }
 add_filter('wp_list_pages', 'new_nav_menu_items');
 
+function sort_projects_by_date( $query ) {
+
+
+    if ( $query->is_main_query() && is_post_type_archive('project') ) {
+        $query->set( 'meta_key', 'project_date' );
+        $query->set( 'orderby', 'meta_value_num' );
+        $query->set( 'order', 'DESC' );
+
+    }
+
+}
+
+add_action( 'pre_get_posts', 'sort_projects_by_date' );
 

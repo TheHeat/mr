@@ -22,7 +22,7 @@
 
   <div class="site-wrapper">
     <header class="site-header">
-    	<h1 class="site-title"><a href="<?php echo bloginfo('home_url'); ?>" rel="home">MR.</a></h1>
+    	<h1 class="site-title"><a href="<?php bloginfo('url'); ?>" rel="home">MR.</a></h1>
 		<nav id="site-navigation" class="header-menu" role="navigation">
 			<label for="showmenu" class="showmenu-label">Menu</label>
       		<input type="checkbox" class="showmenu" name="showmenu" id="showmenu">

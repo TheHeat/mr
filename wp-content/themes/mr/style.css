@@ -423,9 +423,11 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  padding: 0 0 0.25em 0; }
-  /* line 20, scss/_navigation.scss */
+  padding: 0 0 0.25em 0;
+  pointer-events: none; }
+  /* line 21, scss/_navigation.scss */
   .header-menu ul {
+    pointer-events: auto;
     position: absolute;
     left: 0;
     right: 0;
@@ -435,7 +437,7 @@ body {
     margin: 0;
     z-index: 5; }
     @media screen and (min-width: 600px) {
-      /* line 20, scss/_navigation.scss */
+      /* line 21, scss/_navigation.scss */
       .header-menu ul {
         position: static;
         float: right;
@@ -456,7 +458,7 @@ body {
           zoom: 1;
           *display: inline;
           white-space: nowrap; } }
-  /* line 35, scss/_navigation.scss */
+  /* line 37, scss/_navigation.scss */
   .header-menu a {
     color: white;
     text-decoration: none;
@@ -468,27 +470,27 @@ body {
     .header-menu a:hover {
       background-color: #00304c; }
     @media screen and (min-width: 600px) {
-      /* line 35, scss/_navigation.scss */
+      /* line 37, scss/_navigation.scss */
       .header-menu a {
         display: inline-block;
         float: right; } }
 
-/* line 45, scss/_navigation.scss */
+/* line 47, scss/_navigation.scss */
 .header-menu input[type=checkbox] ~ ul {
   max-height: 0;
   overflow: hidden;
   transition: 0.3s; }
   @media screen and (min-width: 600px) {
-    /* line 45, scss/_navigation.scss */
+    /* line 47, scss/_navigation.scss */
     .header-menu input[type=checkbox] ~ ul {
       max-height: 13em; } }
 
-/* line 53, scss/_navigation.scss */
+/* line 55, scss/_navigation.scss */
 .header-menu input[type=checkbox]:checked ~ ul {
   max-height: 24em;
   overflow: hidden; }
 
-/* line 58, scss/_navigation.scss */
+/* line 60, scss/_navigation.scss */
 .showmenu-label {
   color: white;
   text-decoration: none;
@@ -502,11 +504,11 @@ body {
   .showmenu-label:hover {
     background-color: #00304c; }
   @media screen and (min-width: 600px) {
-    /* line 58, scss/_navigation.scss */
+    /* line 60, scss/_navigation.scss */
     .showmenu-label {
       display: none; } }
 
-/* line 67, scss/_navigation.scss */
+/* line 69, scss/_navigation.scss */
 .showmenu {
   display: none; }
 

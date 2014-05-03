@@ -13,7 +13,11 @@
 
 get_header(); ?>
 
-<?php echo 'index.php'?>
+<div class="content-wrapper">
+	<main class="content">
+		<?php get_template_part('content', 'single' ); ?>
+	</main>
+</div>
 
 
 <?php get_footer(); ?>

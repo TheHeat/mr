@@ -7,12 +7,18 @@
 ?>
 
 
-<div class="content-wrapper">
-   <article class="content" id="post-<?php the_ID(); ?>">
-	    <input class="show-content" type="checkbox" id="show-content" name="show-content"> 
-	    <header class="content-header">
-	      <label class="content-toggle" for="show-content">i</label>
-	      <h1 class="page-title"><?php the_title(); ?></h1>
+<article class="content" id="post-<?php the_ID(); ?>">
+	<?php if(is_singular()): ?><input class="show-content" type="checkbox" id="show-content" name="show-content"><?php endif; ?>
+	 
+	<header class="content-header">
+		<?php if(is_singular()): ?><label class="content-toggle" for="show-content">i</label>
+			<?php the_title('<h1 class="page-title">', '</h1>'); ?>
+		<?php else: ?>
+			<a href="<?php the_permalink(); ?>">
+				<?php the_title('<h1 class="page-title">', '</h1>'); ?>
+			</a>
+		<?php endif; ?>
+	   
 
 	      <div class="date">
 	      	<?php
@@ -20,16 +26,18 @@
 	      	$date = date('F Y', strtotime($date));
 	      	echo $date;
 	      	?>
-	      </div>
-
-	      <p class="credit">
-	      	<?php
-	      	the_field('project_credits');
-	      	?>
-	      </p>   
-	    </header>
+	     </div>
+		
+		<?php if(get_field('project_credits')): ?>
+			<div class="meta credit">
+		      	<?php the_field('project_credits');	?>
+			</div> 
+		<?php endif; ?>  
+    </header>
+    <?php if (is_singular()): ?>
 	    <div class="content-full">
 	    	<?php the_content(); ?>
-	    </div>
-  </article>
-</div>
+	    </div>	
+    <?php endif ?>
+    
+</article>

@@ -1,7 +1,6 @@
 // content structure is .content-wrapper > .content > ( .content-header .show-content .content-full )
 
 .content-wrapper{
-	
 
 	@include media(momma){
 		position:absolute;
@@ -19,7 +18,15 @@
 	}
 }
 
+.feed{
+	padding:2em;
+	.content{
+		margin-bottom:2em;
+	}
+}
+
 .content{
+	padding:1em;
 	@include colors-content;
 	pointer-events: auto;
 	
@@ -28,22 +35,26 @@
 		bottom:0;
 		left:0;
 		right:0;
-
 	}
 	
 	@include media(shorty){
 		position:static;
 	}
 	
+}
 
+.feed .content{
+	position:static;
 }
 
 .content-header{
 	position:relative;
-	padding:1em 1em 0;
 	h1{
 		margin:0;
 		font-weight:300;
+	}
+	a{
+		text-decoration:none;
 	}
 
 }
@@ -54,7 +65,6 @@
 }
 
 .content-full{
-	padding:0 1em 1em;
 	transition:0.3s;
 
 	
@@ -120,8 +130,9 @@
 	}
 }
 
-.credit{
+.meta{
 	@include colors-orange;
 	padding:0.5em;
+	margin:0.5em 0;
 }
 

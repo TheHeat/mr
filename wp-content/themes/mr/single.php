@@ -7,19 +7,14 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
+<div class="content-wrapper">
+	<main class="content">
 		<?php while ( have_posts() ) : the_post(); ?>
-
 			<?php get_template_part( 'content', 'single' ); ?>
-
 			<?php mr_post_nav(); ?>
-
 		<?php endwhile; // end of the loop. ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	</main><!-- content -->
+</div><!-- content-wrapper -->
 
 
 <?php get_footer(); ?>

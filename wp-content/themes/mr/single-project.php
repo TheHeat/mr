@@ -25,8 +25,12 @@ get_header(); ?>
 		
 			</div> <!-- galleria -->
 	    </div> <!-- galleria-wrapper -->
+
+	    <div class="content-wrapper">
+		    <?php get_template_part( 'content', 'project' ); ?>
+	    </div>
 	
-		<?php get_template_part( 'content', 'project' ); ?>
+		
 
 		<?php 
 		//mr_post_nav(); 

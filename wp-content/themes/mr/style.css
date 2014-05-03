@@ -539,6 +539,10 @@ header.site-header {
     margin-top: -0.25em;
     background-color: #eddc4b;
     background-image: linear-gradient(to right, #8ac1af, #8ac1af 33.33%, #eddc4b 33.33%, #eddc4b 66.66%, #dd773f 66.66%); }
+  /* line 25, scss/_header.scss */
+  header.site-header a {
+    text-decoration: none;
+    color: white; }
 
 @media screen and (min-width: 600px) {
   /* line 3, scss/_content.scss */
@@ -556,64 +560,77 @@ header.site-header {
   .content-wrapper {
     position: static; } }
 
-/* line 22, scss/_content.scss */
+/* line 21, scss/_content.scss */
+.feed {
+  padding: 2em; }
+  /* line 23, scss/_content.scss */
+  .feed .content {
+    margin-bottom: 2em; }
+
+/* line 28, scss/_content.scss */
 .content {
+  padding: 1em;
   background: white;
   color: #002032;
   pointer-events: auto; }
   @media screen and (min-width: 600px) {
-    /* line 22, scss/_content.scss */
+    /* line 28, scss/_content.scss */
     .content {
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0; } }
   @media screen and (max-height: 30em) {
-    /* line 22, scss/_content.scss */
+    /* line 28, scss/_content.scss */
     .content {
       position: static; } }
 
-/* line 41, scss/_content.scss */
+/* line 46, scss/_content.scss */
+.feed .content {
+  position: static; }
+
+/* line 50, scss/_content.scss */
 .content-header {
-  position: relative;
-  padding: 1em 1em 0; }
-  /* line 44, scss/_content.scss */
+  position: relative; }
+  /* line 52, scss/_content.scss */
   .content-header h1 {
     margin: 0;
     font-weight: 300; }
+  /* line 56, scss/_content.scss */
+  .content-header a {
+    text-decoration: none; }
 
-/* line 56, scss/_content.scss */
+/* line 67, scss/_content.scss */
 .content-full {
-  padding: 0 1em 1em;
   transition: 0.3s; }
   @media screen and (min-width: 600px) {
-    /* line 56, scss/_content.scss */
+    /* line 67, scss/_content.scss */
     .content-full {
       max-height: 20em; }
-      /* line 65, scss/_content.scss */
+      /* line 75, scss/_content.scss */
       input[type=checkbox] ~ .content-full {
         max-height: 0;
         overflow: hidden; }
-      /* line 75, scss/_content.scss */
+      /* line 85, scss/_content.scss */
       input[type=checkbox]:checked ~ .content-full {
         max-height: 20em;
         overflow-y: auto; } }
       @media screen and (min-width: 600px) and (max-height: 30em) {
-        /* line 65, scss/_content.scss */
+        /* line 75, scss/_content.scss */
         input[type=checkbox] ~ .content-full {
           max-height: 1200em;
           overflow: hidden; } }
       @media screen and (min-width: 600px) and (max-height: 30em) {
-        /* line 75, scss/_content.scss */
+        /* line 85, scss/_content.scss */
         input[type=checkbox]:checked ~ .content-full {
           max-height: 1200em;
           overflow: hidden; } }
 
-/* line 93, scss/_content.scss */
+/* line 103, scss/_content.scss */
 .show-content {
   display: none; }
 
-/* line 98, scss/_content.scss */
+/* line 108, scss/_content.scss */
 .content-toggle {
   position: absolute;
   right: 1em;
@@ -630,20 +647,21 @@ header.site-header {
   cursor: pointer;
   display: none; }
   @media screen and (min-width: 600px) {
-    /* line 98, scss/_content.scss */
+    /* line 108, scss/_content.scss */
     .content-toggle {
       display: block;
       top: 1em; } }
     @media screen and (min-width: 600px) and (max-height: 30em) {
-      /* line 98, scss/_content.scss */
+      /* line 108, scss/_content.scss */
       .content-toggle {
         display: none; } }
 
-/* line 123, scss/_content.scss */
-.credit {
+/* line 133, scss/_content.scss */
+.meta {
   background-color: #dd773f;
   color: white;
-  padding: 0.5em; }
+  padding: 0.5em;
+  margin: 0.5em 0; }
 
 /* line 1, scss/_media.scss */
 .galleria-wrapper {

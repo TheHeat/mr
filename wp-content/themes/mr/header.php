@@ -18,16 +18,15 @@
 <?php wp_head(); ?>
 </head>
 
-<body class="body index">
+<body <?php body_class(); ?>>
 
   <div class="site-wrapper">
     <header class="site-header">
-    	<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">MR</a></h1>
+    	<h1 class="site-title"><a href="<?php echo bloginfo('home_url'); ?>" rel="home">MR.</a></h1>
 		<nav id="site-navigation" class="header-menu" role="navigation">
 			<label for="showmenu" class="showmenu-label">Menu</label>
       		<input type="checkbox" class="showmenu" name="showmenu" id="showmenu">
-			<?php wp_nav_menu( array(
-				'container' => FALSE, 
-				'menu_class'      => 'nav-menu',) ); ?>
-		</nav><!-- #site-navigation -->
+			<?php wp_nav_menu( array('container' => FALSE, 'menu_class' => 'nav-menu',) ); ?>
+		</nav>
+		<!-- #site-navigation -->
     </header>

@@ -18,9 +18,16 @@ Galleria.addTheme({
     defaults: {
         
         imageCrop: true,
+        carousel: false,
         thumbnails: false,
         transition: 'slide',
         responsive: true,
+        vimeo: {
+            title: 0,
+            byline: 0,
+            portrait: 0,
+            api: 1,
+            },
 
         // set this to false if you want to show the caption all the time:
         _toggleInfo: true

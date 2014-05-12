@@ -38,7 +38,7 @@ function mr_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	//add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -91,7 +91,7 @@ function mr_scripts() {
 
 	if (is_singular('project')){
 		wp_enqueue_script( 'galleria', get_template_directory_uri() . '/js/galleria/galleria-1.3.min.js', array('jquery'), '20120206', true );
-		// wp_enqueue_script( 'theme-scripts', get_template_directory_uri() . '/js/theme-scripts.js', array(), '20130115', true );
+		wp_enqueue_script( 'theme-scripts', get_template_directory_uri() . '/js/theme-scripts.js', array(), '20130115', true );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'mr_scripts' );
@@ -144,7 +144,7 @@ function register_cpt_project() {
         'labels' => $labels,
         'hierarchical' => false,
         
-        'supports' => array( 'title', 'editor' ),
+        'supports' => array( 'title', 'editor', 'thumbnail' ),
         
         'public' => true,
         'show_ui' => true,
@@ -165,6 +165,8 @@ function register_cpt_project() {
 }
 add_filter('wp_list_pages', 'new_nav_menu_items');
 
+// This function sorts the "projects" custom-post-type by the value of the project_date field (obvs).
+
 function sort_projects_by_date( $query ) {
 
 
@@ -179,3 +181,4 @@ function sort_projects_by_date( $query ) {
 
 add_action( 'pre_get_posts', 'sort_projects_by_date' );
 
+add_image_size('gallery', 1600, 900, array('center','top'));

@@ -3,14 +3,14 @@
 .content-wrapper{
 
 	@include media(momma){
-		position:absolute;
-		top:0;
-		right:10%;
-		bottom:0;
-		left: 10%;
-		overflow:hidden;
+		position: absolute;
+		top: 8em;
+		left: 2em;
+		right:50%;
+		bottom: 2em;
+		overflow: hidden;
 		pointer-events: none;
-		z-index:4;
+		z-index: 8;
 	}
 
 	@include media(shorty){
@@ -19,9 +19,35 @@
 }
 
 .feed{
-	padding:2em;
-	.content{
-		margin-bottom:2em;
+
+	margin:1em;
+
+}
+
+.feed-item{
+	padding:1em;
+	float:left;
+
+	img{
+		display:block;
+		max-width:100%;
+		height:auto;
+
+	}
+	@include media(momma){
+		width:50%;
+		&:nth-child(2n+1){
+			clear:left;
+		}
+	}
+	@include media(poppa){
+		width:33.33%;
+		&:nth-child(2n+1){
+			clear:none;
+		}
+		&:nth-child(3n+1){
+			clear:left;
+		}
 	}
 }
 
@@ -35,6 +61,8 @@
 		bottom:0;
 		left:0;
 		right:0;
+		overflow:hidden;
+		transition:1s;
 	}
 	
 	@include media(shorty){
@@ -48,9 +76,8 @@
 }
 
 .content-header{
-	position:relative;
 	h1{
-		margin:0;
+		margin:0 3rem 0 0;
 		font-weight:300;
 	}
 	a{
@@ -60,38 +87,33 @@
 }
 
 @mixin opencontent{
-	max-height:1200em;
-	overflow:hidden;
+	overflow:visible;
 }
 
-.content-full{
-	transition:0.3s;
-
-	
-	
+.hidden {
 	@include media(momma){
-		max-height:20em;
-
-		input[type=checkbox] ~ &{
-		max-height:0;
-		overflow:hidden;
-
-			@include media(shorty){
-				@include opencontent;
-			}
-
-
+		.content-header{
+			cursor:pointer;
 		}
-		input[type=checkbox]:checked ~ &{
-			max-height:20em;
-			overflow-y:auto;
-
-			@include media(shorty){
-				@include opencontent;
-			}
+		.content-full{
+			height:0;
+			overflow:hidden;
 		}
 	}
+	@include media(shorty){
+		height:auto;
+		overflow-y: scroll; /* has to be scroll, not auto */
+		  -webkit-overflow-scrolling: touch;
+	}
+}
 
+.visible{
+	@include media(momma){
+		top:0;
+		transition:1s;
+		overflow-y: scroll; /* has to be scroll, not auto */
+		-webkit-overflow-scrolling: touch;
+	}
 }
 
 
@@ -106,24 +128,10 @@
 
 // The label
 .content-toggle{
-	position:absolute;
-	right:0;
-	bottom:0;
-
-	transition:2s;
-	border-radius:50%;
-	@include colors-blue;
-	width:2em;
-	height:2em;
-	line-height:2;
-	text-align:center;
-	z-index:6;
-	cursor: pointer;
 	display:none;
 
 	@include media(momma){
 		display:block;
-		top:1em;
 		@include media(shorty){
 			display:none;
 		}
@@ -134,5 +142,6 @@
 	@include colors-orange;
 	padding:0.5em;
 	margin:0.5em 0;
+	font-size:small;
 }
 

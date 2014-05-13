@@ -22,6 +22,8 @@ Galleria.addTheme({
         thumbnails: false,
         transition: 'slide',
         responsive: true,
+        autoplay: 7000,
+        pauseOnInteraction: false,
         vimeo: {
             title: 0,
             byline: 0,
@@ -30,41 +32,44 @@ Galleria.addTheme({
             },
 
         // set this to false if you want to show the caption all the time:
-        _toggleInfo: true
+        _toggleInfo: false
     },
     init: function(options) {
 
         Galleria.requires(1.28, 'This version of marcrees theme requires Galleria 1.2.8 or later');
 
-        // add some elements
-        this.addElement('info-link','info-close');
+        // add play & pause
+        this.addElement('image-nav-play', 'image-nav-pause');
         this.append({
-            'info' : ['info-link','info-close']
+            'image-nav' : ['image-nav-play','image-nav-pause']
         });
 
-        // cache some stuff
-        var info = this.$('info-link,info-close,info-text'),
+
+        this.$('image-nav-play').hide();
+
+
+
+
+       // cache some stuff
+        var info = this.$('info-text'),
+            playbutton = this.$('image-nav-play,image-nav-pause'),
             touch = Galleria.TOUCH,
             click = touch ? 'touchstart' : 'click';
 
         // show loader & counter with opacity
         this.$('loader,counter').show().css('opacity', 0.4);
 
+
+        // Toggle play/pause buttons
+        this.$('image-nav-pause,image-nav-play').click(function(){
+            $('.galleria').data('galleria').playToggle();
+            playbutton.toggle();
+        });
+
         // some stuff for non-touch browsers
         if (! touch ) {
-            this.addIdleState( this.get('image-nav-left'), { left:-50 });
-            this.addIdleState( this.get('image-nav-right'), { right:-50 });
+            this.addIdleState( this.get('image-nav'), { opacity:0 });
             this.addIdleState( this.get('counter'), { opacity:0 });
-        }
-
-        // toggle info
-        if ( options._toggleInfo === true ) {
-            info.bind( click, function() {
-                info.toggle();
-            });
-        } else {
-            info.show();
-            this.$('info-link, info-close').hide();
         }
 
         // bind some stuff

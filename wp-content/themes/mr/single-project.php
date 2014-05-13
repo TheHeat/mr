@@ -19,15 +19,13 @@ get_header(); ?>
 
     		$('.content').addClass('hidden');
 
-			$('.content-toggle').click(function(){
+			$('.content-toggle , .content-header').click(function(){
 				$('.content').toggleClass('hidden');
 				$('.content').toggleClass('visible');
+				$('.galleria').data('galleria').playToggle();
+				$('.galleria-image-nav').toggle();
 			})
 			
-			$('.content-header').click(function(){
-				$('.content').toggleClass('hidden');
-				$('.content').toggleClass('visible');
-			})
 
 		});
 

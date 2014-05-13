@@ -21,7 +21,8 @@
 				foreach ($the_gallery as $image) {
 					$url = $image['sizes']['gallery'];
 					$alt = $image['alt'];
-					echo '<img src="' . $url . '" alt="' . $alt . '">';
+					$caption = $image['caption'];
+					echo '<img src="' . $url . '" alt="' . $alt . '" data-description="' . $caption . '" />';
 				}
 			?>		
 		</div>

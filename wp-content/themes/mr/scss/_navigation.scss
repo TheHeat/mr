@@ -16,7 +16,7 @@
 	  right:0;
 	  left:0;
 	  padding:0 0 0.25em 0;
-	  pointer-events:auto;
+	  pointer-events:none;
 
 	ul{
 		pointer-events:auto;
@@ -58,6 +58,7 @@
 }
 
 .showmenu-label{
+	pointer-events:auto;
 	@include menuitem;
 	cursor: pointer;
 	float:right;

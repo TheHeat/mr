@@ -58,10 +58,12 @@
 	
 	@include media(momma){
 		position:absolute;
+		top:0;
 		bottom:0;
 		left:0;
 		right:0;
-		overflow:hidden;
+		overflow-y: scroll; /* has to be scroll, not auto */
+		-webkit-overflow-scrolling: touch;
 		transition:1s;
 	}
 	
@@ -73,6 +75,7 @@
 
 .feed .content{
 	position:static;
+	overflow:hidden;
 }
 
 .content-header{
@@ -92,6 +95,8 @@
 
 .hidden {
 	@include media(momma){
+		top:auto;
+		overflow-y:hidden;
 		.content-header{
 			cursor:pointer;
 		}

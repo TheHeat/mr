@@ -424,7 +424,7 @@ body {
   right: 0;
   left: 0;
   padding: 0 0 0.25em 0;
-  pointer-events: auto; }
+  pointer-events: none; }
   /* line 21, scss/_navigation.scss */
   .header-menu ul {
     pointer-events: auto;
@@ -492,6 +492,7 @@ body {
 
 /* line 60, scss/_navigation.scss */
 .showmenu-label {
+  pointer-events: auto;
   color: white;
   text-decoration: none;
   display: block;
@@ -508,11 +509,11 @@ body {
     .showmenu-label {
       display: none; } }
 
-/* line 69, scss/_navigation.scss */
+/* line 70, scss/_navigation.scss */
 .showmenu {
   display: none; }
 
-/* line 92, scss/_navigation.scss */
+/* line 93, scss/_navigation.scss */
 .content-toggle {
   font-family: Georgia, serif;
   font-weight: bold;
@@ -623,38 +624,46 @@ header.site-header {
     /* line 54, scss/_content.scss */
     .content {
       position: absolute;
+      top: 0;
       bottom: 0;
       left: 0;
       right: 0;
-      overflow: hidden;
+      overflow-y: scroll;
+      /* has to be scroll, not auto */
+      -webkit-overflow-scrolling: touch;
       transition: 1s; } }
   @media screen and (max-height: 30em) {
     /* line 54, scss/_content.scss */
     .content {
       position: static; } }
 
-/* line 74, scss/_content.scss */
+/* line 76, scss/_content.scss */
 .feed .content {
-  position: static; }
+  position: static;
+  overflow: hidden; }
 
-/* line 79, scss/_content.scss */
+/* line 82, scss/_content.scss */
 .content-header h1 {
   margin: 0 3rem 0 0;
   font-weight: 300; }
-/* line 83, scss/_content.scss */
+/* line 86, scss/_content.scss */
 .content-header a {
   text-decoration: none; }
 
 @media screen and (min-width: 769px) {
-  /* line 95, scss/_content.scss */
-  .hidden .content-header {
-    cursor: pointer; }
-  /* line 98, scss/_content.scss */
-  .hidden .content-full {
-    height: 0;
-    overflow: hidden; } }
+  /* line 96, scss/_content.scss */
+  .hidden {
+    top: auto;
+    overflow-y: hidden; }
+    /* line 100, scss/_content.scss */
+    .hidden .content-header {
+      cursor: pointer; }
+    /* line 103, scss/_content.scss */
+    .hidden .content-full {
+      height: 0;
+      overflow: hidden; } }
 @media screen and (max-height: 30em) {
-  /* line 93, scss/_content.scss */
+  /* line 96, scss/_content.scss */
   .hidden {
     height: auto;
     overflow-y: scroll;
@@ -662,7 +671,7 @@ header.site-header {
     -webkit-overflow-scrolling: touch; } }
 
 @media screen and (min-width: 769px) {
-  /* line 110, scss/_content.scss */
+  /* line 115, scss/_content.scss */
   .visible {
     top: 0;
     transition: 1s;
@@ -670,23 +679,23 @@ header.site-header {
     /* has to be scroll, not auto */
     -webkit-overflow-scrolling: touch; } }
 
-/* line 125, scss/_content.scss */
+/* line 130, scss/_content.scss */
 .show-content {
   display: none; }
 
-/* line 130, scss/_content.scss */
+/* line 135, scss/_content.scss */
 .content-toggle {
   display: none; }
   @media screen and (min-width: 769px) {
-    /* line 130, scss/_content.scss */
+    /* line 135, scss/_content.scss */
     .content-toggle {
       display: block; } }
     @media screen and (min-width: 769px) and (max-height: 30em) {
-      /* line 130, scss/_content.scss */
+      /* line 135, scss/_content.scss */
       .content-toggle {
         display: none; } }
 
-/* line 141, scss/_content.scss */
+/* line 146, scss/_content.scss */
 .meta {
   background-color: #dd773f;
   color: white;

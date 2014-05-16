@@ -14,37 +14,8 @@
 				<?php the_title('<h1 class="page-title">', '</h1>'); ?>
 			</a>
 		<?php endif; ?>
-		<div class="date"><?php mr_posted_on(); ?></div>
 		<div class="meta">
-			<?php
-				/* translators: used between list items, there is a space after the comma */
-				$category_list = get_the_category_list( __( ', ', 'mr' ) );
-
-				/* translators: used between list items, there is a space after the comma */
-				$tag_list = get_the_tag_list( '', __( ', ', 'mr' ) );
-
-				if ( ! mr_categorized_blog() ) {
-					// This blog only has 1 category so we just need to worry about tags in the meta text
-					if ( '' != $tag_list ) {
-						$meta_text = __( 'Tagged %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'mr' );
-					} else {
-						$meta_text = __( 'Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'mr' );
-					}
-					} else {
-					// But this blog has loads of categories so we should probably display them here
-					if ( '' != $tag_list ) {
-						$meta_text = __( 'Posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'mr' );
-					} else {
-						$meta_text = __( 'Posted in %1$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'mr' );
-					}
-					} // end check for categories on this blog
-					printf(
-					$meta_text,
-					$category_list,
-					$tag_list,
-					get_permalink()
-				);
-			?>	
+			<p>Posted: <?php the_date() ?></p>
 		</div>   
 	</header>
 

@@ -105,6 +105,8 @@
     width: 63px;
     height: 90px;
     background-position: 0 0;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
 }
 .galleria-image-nav-left {
     right:126px;

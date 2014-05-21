@@ -31,3 +31,13 @@ body{
 	color:$color-text;
 }
 
+a{
+	color:adjust-lightness($color-ground, 25);
+	&:hover{
+		color:adjust-lightness($color-ground, 50);
+	}
+	&:visited{
+		color:adjust-hue($color-ground, 33.33%);	
+	}
+}
+

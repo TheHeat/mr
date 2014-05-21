@@ -401,6 +401,16 @@ body {
   background-color: #002032;
   color: white; }
 
+/* line 34, scss/_colors.scss */
+a {
+  color: #0072b2; }
+  /* line 36, scss/_colors.scss */
+  a:hover {
+    color: #32b5ff; }
+  /* line 39, scss/_colors.scss */
+  a:visited {
+    color: #000432; }
+
 /* line 1, scss/_layout.scss */
 * {
   -webkit-box-sizing: border-box;

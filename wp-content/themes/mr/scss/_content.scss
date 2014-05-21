@@ -4,10 +4,10 @@
 
 	@include media(momma){
 		position: absolute;
-		top: 8em;
-		left: 2em;
+		top: 7em;
+		left: 1em;
 		right:50%;
-		bottom: 2em;
+		bottom: 1em;
 		overflow: hidden;
 		pointer-events: none;
 		z-index: 8;
@@ -19,13 +19,12 @@
 }
 
 .feed{
-
-	margin:1em;
-
+	margin:0.5em;
+	@include clearfix;
 }
 
 .feed-item{
-	padding:1em;
+	padding:0.5em;
 	float:left;
 
 	img{
@@ -69,6 +68,11 @@
 	
 	@include media(shorty){
 		position:static;
+	}
+
+	img{
+		max-width:100%;
+		height:auto;
 	}
 	
 }

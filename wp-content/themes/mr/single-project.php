@@ -15,8 +15,6 @@ get_header(); ?>
 	<script type="text/javascript">
 		jQuery(document).ready(function($){
 
-    		$('.content-full').fitVids();
-
     		$('.content').addClass('hidden');
 
 			$('.content-toggle , .content-header').click(function(){

@@ -82,9 +82,9 @@
 	border-radius:50%;
 	border:solid white 0.25em;
 	@include colors-orange;
-	width:2.5em;
-	height:2.5em;
-	line-height:2;
+	width:2em;
+	height:2em;
+	line-height:1.5;
 	text-align:center;
 	cursor: pointer;
  }
@@ -94,8 +94,8 @@
 	@include toggles;
 	position: absolute;
 	z-index: 20;
-	top: 6.75em;
-	left: 0.75em;
+	top: 6.5em;
+	left: 0.5em;
 }
 
 

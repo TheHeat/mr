@@ -34,12 +34,22 @@
 			@include inline-block-list;
 		}
 	}
-	a{
+	a, .active{
 		@include menuitem;
 		@include media(momma){
 			display:inline-block;
 			float:right;
 		}
+	}
+
+	.active{
+		font-weight: bold;
+	}
+
+	.lang{
+		color: #989898;
+		border-top: 0.25em solid #989898;
+		padding-top: 0.75em;
 	}
 }
 
@@ -119,6 +129,7 @@
 .nav-previous{
 	float:left;
 }
+
 .nav-next{
 	float:right;
 	 @include media(momma){
@@ -126,3 +137,5 @@
 	 	bottom:1em;
     }
 }
+
+

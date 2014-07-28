@@ -1,0 +1,132 @@
+==================================================
+WPML Multilingual CMS 3.1.6 => Installed/Active
+WPML CMS Nav 1.4.3 => Installed/Active
+WPML String Translation 2.0.5 => Installed/Not Active
+WPML Sticky Links Version n/a => Not installed/Not Active
+WPML Translation Management Version n/a => Not installed/Not Active
+WPML Translation Analytics Version n/a => Not installed/Not Active
+WPML XLIFF Version n/a => Not installed/Not Active
+WPML Media Version n/a => Not installed/Not Active
+WooCommerce Multilingual Version n/a => Not installed/Not Active
+JigoShop Multilingual Version n/a => Not installed/Not Active
+Gravity Forms Multilingual Version n/a => Not installed/Not Active
+CRED Frontend Translation Version n/a => Not installed/Not Active
+Installer Version n/a => Not installed/Not Active
+--------------------------------------------------
+icl_translations count: 25
+setup_complete: false
+setup_complete missing: true
+default_language: ""
+default_language_missing: true
+
+active_languages: 
+Array
+(
+    [0] => stdClass Object
+        (
+            [id] => 1
+            [code] => en
+            [english_name] => English
+            [major] => 1
+            [active] => 1
+            [default_locale] => en_US
+            [tag] => en-US
+            [encode_url] => 0
+        )
+
+    [1] => stdClass Object
+        (
+            [id] => 11
+            [code] => cy
+            [english_name] => Welsh
+            [major] => 0
+            [active] => 1
+            [default_locale] => cy
+            [tag] => cy
+            [encode_url] => 0
+        )
+
+)
+
+
+icl_sitepress_settings (serialized): 
+a:47:{s:19:"hide_upgrade_notice";s:5:"3.1.6";s:25:"icl_capabilities_verified";b:1;s:21:"interview_translators";i:1;s:34:"existing_content_language_verified";i:0;s:25:"language_negotiation_type";i:3;s:23:"theme_localization_type";i:2;s:14:"icl_lso_header";i:0;s:18:"icl_lso_link_empty";i:0;s:13:"icl_lso_flags";i:0;s:19:"icl_lso_native_lang";i:1;s:20:"icl_lso_display_lang";i:1;s:18:"sync_page_ordering";i:1;s:16:"sync_page_parent";i:1;s:18:"sync_page_template";i:1;s:16:"sync_ping_status";i:1;s:19:"sync_comment_status";i:1;s:16:"sync_sticky_flag";i:1;s:17:"sync_private_flag";i:1;s:16:"sync_post_format";i:1;s:11:"sync_delete";i:0;s:15:"sync_delete_tax";i:0;s:20:"sync_post_taxonomies";i:1;s:14:"sync_post_date";i:0;s:21:"sync_taxonomy_parents";i:0;s:25:"translation_pickup_method";i:0;s:15:"notify_complete";i:1;s:26:"translated_document_status";i:1;s:17:"remote_management";i:0;s:15:"auto_adjust_ids";i:1;s:11:"alert_delay";i:0;s:12:"promote_wpml";i:0;s:23:"troubleshooting_options";a:1:{s:18:"http_communication";i:1;}s:18:"automatic_redirect";i:0;s:17:"remember_language";i:24;s:17:"icl_lang_sel_type";s:8:"dropdown";s:18:"icl_lang_sel_stype";s:7:"classic";s:24:"icl_lang_sel_orientation";s:8:"vertical";s:28:"icl_lang_sel_copy_parameters";s:0:"";s:21:"icl_widget_title_show";i:1;s:28:"translated_document_page_url";s:13:"auto-generate";s:28:"sync_comments_on_duplicates ";i:0;s:3:"seo";a:2:{s:10:"head_langs";i:1;s:27:"canonicalization_duplicates";i:1;}s:22:"posts_slug_translation";a:1:{s:2:"on";i:0;}s:15:"languages_order";a:1:{i:0;s:2:"en";}s:4:"urls";a:5:{s:30:"directory_for_default_language";i:0;s:12:"show_on_root";s:0:"";s:19:"root_html_file_path";s:0:"";s:9:"root_page";i:0;s:23:"hide_language_switchers";i:1;}s:22:"admin_default_language";s:9:"_default_";s:18:"ajx_health_checked";b:1;}
+
+icl_sitepress_settings (unserialized): 
+Array
+(
+    [hide_upgrade_notice] => 3.1.6
+    [icl_capabilities_verified] => 1
+    [interview_translators] => 1
+    [existing_content_language_verified] => 0
+    [language_negotiation_type] => 3
+    [theme_localization_type] => 2
+    [icl_lso_header] => 0
+    [icl_lso_link_empty] => 0
+    [icl_lso_flags] => 0
+    [icl_lso_native_lang] => 1
+    [icl_lso_display_lang] => 1
+    [sync_page_ordering] => 1
+    [sync_page_parent] => 1
+    [sync_page_template] => 1
+    [sync_ping_status] => 1
+    [sync_comment_status] => 1
+    [sync_sticky_flag] => 1
+    [sync_private_flag] => 1
+    [sync_post_format] => 1
+    [sync_delete] => 0
+    [sync_delete_tax] => 0
+    [sync_post_taxonomies] => 1
+    [sync_post_date] => 0
+    [sync_taxonomy_parents] => 0
+    [translation_pickup_method] => 0
+    [notify_complete] => 1
+    [translated_document_status] => 1
+    [remote_management] => 0
+    [auto_adjust_ids] => 1
+    [alert_delay] => 0
+    [promote_wpml] => 0
+    [troubleshooting_options] => Array
+        (
+            [http_communication] => 1
+        )
+
+    [automatic_redirect] => 0
+    [remember_language] => 24
+    [icl_lang_sel_type] => dropdown
+    [icl_lang_sel_stype] => classic
+    [icl_lang_sel_orientation] => vertical
+    [icl_lang_sel_copy_parameters] => 
+    [icl_widget_title_show] => 1
+    [translated_document_page_url] => auto-generate
+    [sync_comments_on_duplicates ] => 0
+    [seo] => Array
+        (
+            [head_langs] => 1
+            [canonicalization_duplicates] => 1
+        )
+
+    [posts_slug_translation] => Array
+        (
+            [on] => 0
+        )
+
+    [languages_order] => Array
+        (
+            [0] => en
+        )
+
+    [urls] => Array
+        (
+            [directory_for_default_language] => 0
+            [show_on_root] => 
+            [root_html_file_path] => 
+            [root_page] => 0
+            [hide_language_switchers] => 1
+        )
+
+    [admin_default_language] => _default_
+    [ajx_health_checked] => 1
+)
+
+==================================================

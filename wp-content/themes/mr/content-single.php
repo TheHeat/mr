@@ -27,7 +27,9 @@
 							$caption = $image['caption'];
 							echo '<img src="' . $url . '" alt="' . $alt . '" data-description="' . $caption . '" />';
 						}
-					?>		
+					?>	
+
+						
 				</div>
 
 				<script type="text/javascript">

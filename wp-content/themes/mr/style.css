@@ -568,18 +568,53 @@ a {
       right: 0;
       width: 50%; } }
 
-/* line 129, scss/_navigation.scss */
+/* line 132, scss/_navigation.scss */
 .nav-previous {
   float: left; }
+  /* line 134, scss/_navigation.scss */
+  .nav-previous a {
+    text-decoration: none; }
+  /* line 137, scss/_navigation.scss */
+  .nav-previous i {
+    font-size: 4em;
+    vertical-align: middle;
+    margin-top: 6px; }
+  /* line 143, scss/_navigation.scss */
+  .nav-previous span {
+    vertical-align: middle; }
 
-/* line 133, scss/_navigation.scss */
+/* line 148, scss/_navigation.scss */
 .nav-next {
   float: right; }
+  /* line 150, scss/_navigation.scss */
+  .nav-next a {
+    text-decoration: none; }
+  /* line 154, scss/_navigation.scss */
+  .nav-next i {
+    font-size: 4em;
+    vertical-align: middle;
+    margin-top: 6px; }
+  /* line 160, scss/_navigation.scss */
+  .nav-next span {
+    vertical-align: middle; }
   @media screen and (min-width: 769px) {
-    /* line 133, scss/_navigation.scss */
+    /* line 148, scss/_navigation.scss */
     .nav-next {
       position: absolute;
       bottom: 1em; } }
+
+/* line 172, scss/_navigation.scss */
+.paging-navigation {
+  padding: 0 10px;
+  width: 100%; }
+  /* line 176, scss/_navigation.scss */
+  .paging-navigation .nav-next {
+    float: right;
+    position: relative;
+    bottom: 0; }
+  /* line 182, scss/_navigation.scss */
+  .paging-navigation a, .paging-navigation a:visited {
+    color: white; }
 
 /* line 3, scss/_typography.scss */
 body {

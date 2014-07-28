@@ -22,11 +22,11 @@ function mr_paging_nav() {
 		<div class="nav-links">
 
 			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'mr' ) ); ?></div>
+			<div class="nav-previous"><?php next_posts_link( __( '<i class="fa fa-chevron-left"></i><span class="meta-nav">Older posts</span>', 'mr' ) ); ?></div>
 			<?php endif; ?>
 
 			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'mr' ) ); ?></div>
+			<div class="nav-next"><?php previous_posts_link( __( '<span class="meta-nav">Newer posts</span><i class="fa fa-chevron-right"></i>', 'mr' ) ); ?></div>
 			<?php endif; ?>
 
 		</div><!-- .nav-links -->
@@ -52,8 +52,8 @@ function mr_post_nav() {
 		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'mr' ); ?></h1>
 		<div class="nav-links">
 			<?php
-				previous_post_link( '<div class="nav-previous">%link</div>', _x( '<span class="meta-nav">&larr;</span> %title', 'Previous post link', 'mr' ) );
-				next_post_link(     '<div class="nav-next">%link</div>',     _x( '%title <span class="meta-nav">&rarr;</span>', 'Next post link',     'mr' ) );
+				previous_post_link( '<div class="nav-previous">%link</div>', _x( '<i class="fa fa-chevron-left"></i><span class="meta-nav">Previous post</span>', 'Previous post link', 'mr' ) );
+				next_post_link(     '<div class="nav-next">%link</div>',     _x( '<span class="meta-nav">Next post</span><i class="fa fa-chevron-right"></i>', 'Next post link',     'mr' ) );
 			?>
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->

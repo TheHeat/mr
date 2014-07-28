@@ -30,5 +30,6 @@ get_header(); ?>
 	<?php endif; ?>
 </div>
 
+<?php mr_paging_nav();?>
 
 <?php get_footer(); ?>

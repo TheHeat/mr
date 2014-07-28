@@ -126,16 +126,60 @@
 	}
 }
 
+
+
+
 .nav-previous{
 	float:left;
+	a {
+		text-decoration: none;
+		}
+	i {
+		font-size: 4em;
+		vertical-align: middle;
+		margin-top: 6px;
+	}
+
+	span {
+		vertical-align: middle;
+	}
 }
 
 .nav-next{
 	float:right;
+	a {
+		text-decoration: none;
+		}
+
+	i {
+		font-size: 4em;
+		vertical-align: middle;
+		margin-top: 6px;
+	}
+
+	span {
+		vertical-align: middle;
+	}
+
 	 @include media(momma){
 	 	position:absolute;
 	 	bottom:1em;
     }
 }
 
+// paging-navigation
 
+.paging-navigation{
+
+	padding: 0 10px;
+	width: 100%;
+	.nav-next{
+		float: right;
+		position: relative;
+		bottom: 0;
+	}
+
+	a, a:visited{
+		color: white;
+	}
+}

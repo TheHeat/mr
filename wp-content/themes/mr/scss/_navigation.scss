@@ -134,11 +134,11 @@
 	a {
 		text-decoration: none;
 		}
-	i {
-		font-size: 4em;
-		vertical-align: middle;
-		margin-top: 6px;
-	}
+	// i {
+	// 	font-size: 4em;
+	// 	vertical-align: middle;
+	// 	margin-top: 6px;
+	// }
 
 	span {
 		vertical-align: middle;
@@ -151,11 +151,11 @@
 		text-decoration: none;
 		}
 
-	i {
-		font-size: 4em;
-		vertical-align: middle;
-		margin-top: 6px;
-	}
+	// i {
+	// 	font-size: 4em;
+	// 	vertical-align: middle;
+	// 	margin-top: 6px;
+	// }
 
 	span {
 		vertical-align: middle;
@@ -182,4 +182,45 @@
 	a, a:visited{
 		color: white;
 	}
+}
+
+.post-image-nav-left,
+.post-image-nav-right {
+    // position:relative;
+    bottom:0;
+    right:63px;
+    cursor: pointer;
+    width: 63px;
+    height: 90px;
+    background-position: 0 0;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    display: inline-block;
+}
+.post-image-nav-left {
+    right:126px;
+}
+.post-image-nav-right {
+    right:0;
+    background-position: 100% 0;
+}
+
+.post-image-nav-left,
+.post-image-nav-right {
+    background-image: url(js/galleria/themes/marcrees/mr-controls.svg);
+    background-repeat: no-repeat;
+}
+
+.post-image-nav-left:active,
+.post-image-nav-right:active,
+ {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.post-image-nav-left:hover,
+.post-image-nav-right:hover,
+ {
+    opacity: 1;
+    filter: alpha(opacity=100);
 }

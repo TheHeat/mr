@@ -574,11 +574,6 @@ a {
   /* line 134, scss/_navigation.scss */
   .nav-previous a {
     text-decoration: none; }
-  /* line 137, scss/_navigation.scss */
-  .nav-previous i {
-    font-size: 4em;
-    vertical-align: middle;
-    margin-top: 6px; }
   /* line 143, scss/_navigation.scss */
   .nav-previous span {
     vertical-align: middle; }
@@ -589,11 +584,6 @@ a {
   /* line 150, scss/_navigation.scss */
   .nav-next a {
     text-decoration: none; }
-  /* line 154, scss/_navigation.scss */
-  .nav-next i {
-    font-size: 4em;
-    vertical-align: middle;
-    margin-top: 6px; }
   /* line 160, scss/_navigation.scss */
   .nav-next span {
     vertical-align: middle; }
@@ -615,6 +605,46 @@ a {
   /* line 182, scss/_navigation.scss */
   .paging-navigation a, .paging-navigation a:visited {
     color: white; }
+
+/* line 188, scss/_navigation.scss */
+.post-image-nav-left,
+.post-image-nav-right {
+  bottom: 0;
+  right: 63px;
+  cursor: pointer;
+  width: 63px;
+  height: 90px;
+  background-position: 0 0;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  display: inline-block; }
+
+/* line 200, scss/_navigation.scss */
+.post-image-nav-left {
+  right: 126px; }
+
+/* line 203, scss/_navigation.scss */
+.post-image-nav-right {
+  right: 0;
+  background-position: 100% 0; }
+
+/* line 209, scss/_navigation.scss */
+.post-image-nav-left,
+.post-image-nav-right {
+  background-image: url(js/galleria/themes/marcrees/mr-controls.svg);
+  background-repeat: no-repeat; }
+
+/* line 216, scss/_navigation.scss */
+.post-image-nav-left:active,
+.post-image-nav-right:active {
+  opacity: 1;
+  filter: alpha(opacity=100); }
+
+/* line 223, scss/_navigation.scss */
+.post-image-nav-left:hover,
+.post-image-nav-right:hover {
+  opacity: 1;
+  filter: alpha(opacity=100); }
 
 /* line 3, scss/_typography.scss */
 body {

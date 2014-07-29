@@ -81,7 +81,7 @@ add_action( 'widgets_init', 'mr_widgets_init' );
 function mr_scripts() {
 	wp_enqueue_style( 'mr-style', get_stylesheet_uri() );
 
-	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+	// wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
 
 	wp_enqueue_script( 'mr-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 

@@ -26,23 +26,25 @@
 		<nav id="site-navigation" class="header-menu" role="navigation">
 			<label for="showmenu" class="showmenu-label">Menu</label>
       		<input type="checkbox" class="showmenu" name="showmenu" id="showmenu">
-			
-			<ul class="wpml-menu">
+
+			<div class="switcher">
 			<?php  
 				//WPML Lanuage Switcher
 				$langs = icl_get_languages('skip_missing=N&orderby=KEY&order=DIR&link_empty_to=str');
 
 				foreach ($langs as $lang) {
 
-					echo '<li',($lang['active'] == 1 ? ' class="active lang"' : ''), '>';
-						echo  ($lang['active'] == 0 ? '<a class="lang" href="' . $lang['url'] . '">' : '') . $lang['language_code'] . ($lang['active'] == 0 ? '</a>' : '');
-					echo '</li>';
+					echo '<span',($lang['active'] == 1 ? ' class="switch active"' : ' class="switch"'), '>';
+					echo  ($lang['active'] == 0 ? '' : '') . $lang['language_code'] . ($lang['active'] == 0 ? '' : '');
+					// echo  ($lang['active'] == 0 ? '<a href="' . $lang['url'] . '">' : '') . $lang['language_code'] . ($lang['active'] == 0 ? '</a>' : '');
+					echo '</span>';
 				}
 
 				?>		
-			</ul>
-
+			</div>
 			<?php wp_nav_menu( array('container' => FALSE, 'menu_class' => 'nav-menu',) ); ?>
+
+			
 		</nav>
 		<!-- #site-navigation -->
     </header>

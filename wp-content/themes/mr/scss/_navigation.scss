@@ -42,14 +42,39 @@
 		}
 	}
 
-	.active{
-		font-weight: bold;
+
+	.switcher {
+	  // position: absolute;
+	  top: 0.2rem;
+	  right: 0.4rem;
+	  // display: inline-block;
+	  // float: right;
+
 	}
 
-	.lang{
-		color: #989898;
-		border-top: 0.25em solid #989898;
-		padding-top: 0.75em;
+
+	.switch {
+	  line-height: 4;
+	  display: block;
+	  float:right;
+	  background-color: #d3dee3;
+	  width: 1.8em;
+	  height: 1.8em;
+	  // margin-top: 2em;
+
+	}
+
+	.switch:last-child {
+	  border-radius: 50% 0 0 50%;
+	}
+
+	.switch:first-child {
+	  border-radius: 0 50% 50% 0;
+
+	}
+
+	.switch.active {
+	  background-color: #f3f6f7;
 	}
 }
 

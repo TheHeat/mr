@@ -33,48 +33,54 @@
 			float:right;
 			@include inline-block-list;
 		}
-	}
-	a, .active{
-		@include menuitem;
-		@include media(momma){
-			display:inline-block;
-			float:right;
+
+		a, .active{
+			@include menuitem;
+			@include media(momma){
+				display:inline-block;
+				float:right;
 		}
 	}
+	}
+
 
 
 	.switcher {
 	  // position: absolute;
-	  top: 0.2rem;
-	  right: 0.4rem;
-	  // display: inline-block;
-	  // float: right;
-
+	  // top: 0.2rem;
+	  // right: 0.4rem;
+	  width: 3.6em;
+	  display: inline-block;
+		float: right;
+		margin: 2.1em 1em 2.1em 1em;
+		z-index: 15;
+		pointer-events:auto;
 	}
 
 
 	.switch {
-	  line-height: 4;
-	  display: block;
-	  float:right;
-	  background-color: #d3dee3;
+	  line-height: 1.8;
+	  display: inline-block;
+	  // float:right;
+	  background-color: adjust-lightness($color-ground, 10);
 	  width: 1.8em;
 	  height: 1.8em;
+	  text-align: center;
 	  // margin-top: 2em;
-
-	}
-
-	.switch:last-child {
-	  border-radius: 50% 0 0 50%;
 	}
 
 	.switch:first-child {
+	  border-radius: 50% 0 0 50%;
+	}
+
+	.switch:last-child {
 	  border-radius: 0 50% 50% 0;
 
 	}
 
-	.switch.active {
-	  background-color: #f3f6f7;
+	.switch.switchactive {
+	  background-color: $color-blue;
+	  color: $color-ground;
 	}
 }
 

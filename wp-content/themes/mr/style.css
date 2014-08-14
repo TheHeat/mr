@@ -468,60 +468,65 @@ a {
           zoom: 1;
           *display: inline;
           white-space: nowrap; } }
-  /* line 37, scss/_navigation.scss */
-  .header-menu a, .header-menu .active {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 1em 1em 0.75em 1em;
-    line-height: 4;
-    background-color: #002032; }
-    /* line 8, scss/_navigation.scss */
-    .header-menu a:hover, .header-menu .active:hover {
-      background-color: #00304c; }
-    @media screen and (min-width: 769px) {
-      /* line 37, scss/_navigation.scss */
-      .header-menu a, .header-menu .active {
-        display: inline-block;
-        float: right; } }
-  /* line 46, scss/_navigation.scss */
+    /* line 37, scss/_navigation.scss */
+    .header-menu ul a, .header-menu ul .active {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 1em 1em 0.75em 1em;
+      line-height: 4;
+      background-color: #002032; }
+      /* line 8, scss/_navigation.scss */
+      .header-menu ul a:hover, .header-menu ul .active:hover {
+        background-color: #00304c; }
+      @media screen and (min-width: 769px) {
+        /* line 37, scss/_navigation.scss */
+        .header-menu ul a, .header-menu ul .active {
+          display: inline-block;
+          float: right; } }
+  /* line 48, scss/_navigation.scss */
   .header-menu .switcher {
-    top: 0.2rem;
-    right: 0.4rem; }
-  /* line 56, scss/_navigation.scss */
-  .header-menu .switch {
-    line-height: 4;
-    display: block;
+    width: 3.6em;
+    display: inline-block;
     float: right;
-    background-color: #d3dee3;
+    margin: 2.1em 1em 2.1em 1em;
+    z-index: 15;
+    pointer-events: auto; }
+  /* line 61, scss/_navigation.scss */
+  .header-menu .switch {
+    line-height: 1.8;
+    display: inline-block;
+    background-color: #004165;
     width: 1.8em;
-    height: 1.8em; }
-  /* line 67, scss/_navigation.scss */
-  .header-menu .switch:last-child {
-    border-radius: 50% 0 0 50%; }
-  /* line 71, scss/_navigation.scss */
+    height: 1.8em;
+    text-align: center; }
+  /* line 72, scss/_navigation.scss */
   .header-menu .switch:first-child {
-    border-radius: 0 50% 50% 0; }
+    border-radius: 50% 0 0 50%; }
   /* line 76, scss/_navigation.scss */
-  .header-menu .switch.active {
-    background-color: #f3f6f7; }
+  .header-menu .switch:last-child {
+    border-radius: 0 50% 50% 0; }
+  /* line 81, scss/_navigation.scss */
+  .header-menu .switch.switchactive {
+    background-color: #8ac1af;
+    color: #002032; }
 
-/* line 82, scss/_navigation.scss */
+/* line 88, scss/_navigation.scss */
 .header-menu input[type=checkbox] ~ ul {
   max-height: 0;
   overflow: hidden;
   transition: 0.3s; }
   @media screen and (min-width: 769px) {
-    /* line 82, scss/_navigation.scss */
+    /* line 88, scss/_navigation.scss */
     .header-menu input[type=checkbox] ~ ul {
       max-height: 13em; } }
 
-/* line 90, scss/_navigation.scss */
+/* line 96, scss/_navigation.scss */
 .header-menu input[type=checkbox]:checked ~ ul {
   max-height: 24em;
   overflow: hidden; }
 
-/* line 95, scss/_navigation.scss */
+/* line 101, scss/_navigation.scss */
 .showmenu-label {
   pointer-events: auto;
   color: white;
@@ -536,15 +541,15 @@ a {
   .showmenu-label:hover {
     background-color: #00304c; }
   @media screen and (min-width: 769px) {
-    /* line 95, scss/_navigation.scss */
+    /* line 101, scss/_navigation.scss */
     .showmenu-label {
       display: none; } }
 
-/* line 105, scss/_navigation.scss */
+/* line 111, scss/_navigation.scss */
 .showmenu {
   display: none; }
 
-/* line 128, scss/_navigation.scss */
+/* line 134, scss/_navigation.scss */
 .content-toggle {
   font-family: Georgia, serif;
   font-weight: bold;
@@ -564,16 +569,16 @@ a {
   top: 6.5em;
   left: 0.5em; }
 
-/* line 139, scss/_navigation.scss */
+/* line 145, scss/_navigation.scss */
 .post-navigation {
   padding: 1em;
   overflow: hidden;
   *zoom: 1; }
-  /* line 142, scss/_navigation.scss */
+  /* line 148, scss/_navigation.scss */
   .post-navigation a {
     color: white; }
   @media screen and (min-width: 769px) {
-    /* line 139, scss/_navigation.scss */
+    /* line 145, scss/_navigation.scss */
     .post-navigation {
       position: absolute;
       top: 6em;
@@ -581,45 +586,45 @@ a {
       right: 0;
       width: 50%; } }
 
-/* line 157, scss/_navigation.scss */
+/* line 163, scss/_navigation.scss */
 .nav-previous {
   float: left; }
-  /* line 159, scss/_navigation.scss */
+  /* line 165, scss/_navigation.scss */
   .nav-previous a {
     text-decoration: none; }
-  /* line 168, scss/_navigation.scss */
+  /* line 174, scss/_navigation.scss */
   .nav-previous span {
     vertical-align: middle; }
 
-/* line 173, scss/_navigation.scss */
+/* line 179, scss/_navigation.scss */
 .nav-next {
   float: right; }
-  /* line 175, scss/_navigation.scss */
+  /* line 181, scss/_navigation.scss */
   .nav-next a {
     text-decoration: none; }
-  /* line 185, scss/_navigation.scss */
+  /* line 191, scss/_navigation.scss */
   .nav-next span {
     vertical-align: middle; }
   @media screen and (min-width: 769px) {
-    /* line 173, scss/_navigation.scss */
+    /* line 179, scss/_navigation.scss */
     .nav-next {
       position: absolute;
       bottom: 1em; } }
 
-/* line 197, scss/_navigation.scss */
+/* line 203, scss/_navigation.scss */
 .paging-navigation {
   padding: 0 10px;
   width: 100%; }
-  /* line 201, scss/_navigation.scss */
+  /* line 207, scss/_navigation.scss */
   .paging-navigation .nav-next {
     float: right;
     position: relative;
     bottom: 0; }
-  /* line 207, scss/_navigation.scss */
+  /* line 213, scss/_navigation.scss */
   .paging-navigation a, .paging-navigation a:visited {
     color: white; }
 
-/* line 213, scss/_navigation.scss */
+/* line 219, scss/_navigation.scss */
 .post-image-nav-left,
 .post-image-nav-right {
   bottom: 0;
@@ -632,28 +637,28 @@ a {
   filter: alpha(opacity=60);
   display: inline-block; }
 
-/* line 225, scss/_navigation.scss */
+/* line 231, scss/_navigation.scss */
 .post-image-nav-left {
   right: 126px; }
 
-/* line 228, scss/_navigation.scss */
+/* line 234, scss/_navigation.scss */
 .post-image-nav-right {
   right: 0;
   background-position: 100% 0; }
 
-/* line 234, scss/_navigation.scss */
+/* line 240, scss/_navigation.scss */
 .post-image-nav-left,
 .post-image-nav-right {
   background-image: url(js/galleria/themes/marcrees/mr-controls.svg);
   background-repeat: no-repeat; }
 
-/* line 241, scss/_navigation.scss */
+/* line 247, scss/_navigation.scss */
 .post-image-nav-left:active,
 .post-image-nav-right:active {
   opacity: 1;
   filter: alpha(opacity=100); }
 
-/* line 248, scss/_navigation.scss */
+/* line 254, scss/_navigation.scss */
 .post-image-nav-left:hover,
 .post-image-nav-right:hover {
   opacity: 1;

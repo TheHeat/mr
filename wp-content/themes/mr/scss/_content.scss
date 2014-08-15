@@ -154,3 +154,13 @@
 	font-size:small;
 }
 
+blockquote{
+	font-style: italic;
+	border-left: 3px solid $color-orange;
+	padding-left: 1em;
+	// font-family: 'Georgia, serif';
+	cite{
+		//nothing here yet
+	}
+}
+

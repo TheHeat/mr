@@ -501,12 +501,6 @@ a {
     height: 1.8em;
     text-align: center;
     text-transform: capitalize; }
-  /* line 74, scss/_navigation.scss */
-  .header-menu .switch:first-child {
-    border-radius: 20% 0 0 20%; }
-  /* line 78, scss/_navigation.scss */
-  .header-menu .switch:last-child {
-    border-radius: 0 20% 20% 0; }
   /* line 83, scss/_navigation.scss */
   .header-menu .switch.switchactive {
     background-color: #8ac1af;
@@ -567,9 +561,9 @@ a {
   cursor: pointer;
   position: absolute;
   z-index: 20;
-  top: 4.33333em;
-  left: 0.33333em;
-  font-size: 1.5em; }
+  top: 6.5em;
+  left: 0.5em;
+  font-size: 1em; }
 
 /* line 148, scss/_navigation.scss */
 .post-navigation {
@@ -704,7 +698,7 @@ header.site-header {
   /* line 3, scss/_content.scss */
   .content-wrapper {
     position: absolute;
-    top: 8em;
+    top: 7em;
     left: 1em;
     right: 50%;
     bottom: 1em;

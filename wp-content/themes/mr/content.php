@@ -11,7 +11,7 @@
 			<?php the_title('<h1 class="page-title">', '</h1>'); ?>
 		<?php else: ?>
 			<a href="<?php the_permalink(); ?>">
-				<?php get_the_image(array('size' => 'gallery')); ?>
+				<?php get_the_image(array('size' => 'gallery', 'link_to_post' => false)); ?>
 				<?php the_title('<h1 class="page-title">', '</h1>'); ?>
 			</a>
 		<?php endif; ?>

@@ -441,7 +441,7 @@ a {
     position: absolute;
     left: 0;
     right: 0;
-    top: 100%;
+    top: 6em;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -744,13 +744,17 @@ header.site-header {
         clear: left; } }
 
 /* line 53, scss/_content.scss */
+.feed-item-blog {
+  float: clear; }
+
+/* line 57, scss/_content.scss */
 .content {
   padding: 1em;
   background: white;
   color: #002032;
   pointer-events: auto; }
   @media screen and (min-width: 769px) {
-    /* line 53, scss/_content.scss */
+    /* line 57, scss/_content.scss */
     .content {
       position: absolute;
       top: 0;
@@ -762,41 +766,41 @@ header.site-header {
       -webkit-overflow-scrolling: touch;
       transition: 1s; } }
   @media screen and (max-height: 30em) {
-    /* line 53, scss/_content.scss */
+    /* line 57, scss/_content.scss */
     .content {
       position: static; } }
-  /* line 73, scss/_content.scss */
+  /* line 77, scss/_content.scss */
   .content img {
     max-width: 100%;
     height: auto; }
 
-/* line 80, scss/_content.scss */
+/* line 84, scss/_content.scss */
 .feed .content {
   position: static;
   overflow: hidden; }
 
-/* line 86, scss/_content.scss */
+/* line 90, scss/_content.scss */
 .content-header h1 {
   margin: 0 3rem 0 0;
   font-weight: 300; }
-/* line 90, scss/_content.scss */
+/* line 94, scss/_content.scss */
 .content-header a {
   text-decoration: none; }
 
 @media screen and (min-width: 769px) {
-  /* line 100, scss/_content.scss */
+  /* line 104, scss/_content.scss */
   .hidden {
     top: auto;
     overflow-y: hidden; }
-    /* line 104, scss/_content.scss */
+    /* line 108, scss/_content.scss */
     .hidden .content-header {
       cursor: pointer; }
-    /* line 107, scss/_content.scss */
+    /* line 111, scss/_content.scss */
     .hidden .content-full {
       height: 0;
       overflow: hidden; } }
 @media screen and (max-height: 30em) {
-  /* line 100, scss/_content.scss */
+  /* line 104, scss/_content.scss */
   .hidden {
     height: auto;
     overflow-y: scroll;
@@ -804,7 +808,7 @@ header.site-header {
     -webkit-overflow-scrolling: touch; } }
 
 @media screen and (min-width: 769px) {
-  /* line 119, scss/_content.scss */
+  /* line 123, scss/_content.scss */
   .visible {
     top: 0;
     transition: 1s;
@@ -812,23 +816,23 @@ header.site-header {
     /* has to be scroll, not auto */
     -webkit-overflow-scrolling: touch; } }
 
-/* line 134, scss/_content.scss */
+/* line 138, scss/_content.scss */
 .show-content {
   display: none; }
 
-/* line 139, scss/_content.scss */
+/* line 143, scss/_content.scss */
 .content-toggle {
   display: none; }
   @media screen and (min-width: 769px) {
-    /* line 139, scss/_content.scss */
+    /* line 143, scss/_content.scss */
     .content-toggle {
       display: block; } }
     @media screen and (min-width: 769px) and (max-height: 30em) {
-      /* line 139, scss/_content.scss */
+      /* line 143, scss/_content.scss */
       .content-toggle {
         display: none; } }
 
-/* line 150, scss/_content.scss */
+/* line 154, scss/_content.scss */
 .meta {
   background-color: #dd773f;
   color: white;
@@ -836,7 +840,7 @@ header.site-header {
   margin: 0.5em 0;
   font-size: small; }
 
-/* line 157, scss/_content.scss */
+/* line 161, scss/_content.scss */
 blockquote {
   font-style: italic;
   border-left: 3px solid #dd773f;

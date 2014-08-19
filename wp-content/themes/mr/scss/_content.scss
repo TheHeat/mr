@@ -51,7 +51,29 @@
 }
 
 .feed-item-blog{
-	float: clear;
+	padding:0.5em;
+
+	img{
+		display:block;
+		max-width:100%;
+		height:auto;
+
+	}
+	@include media(momma){
+		width:50%;
+		&:nth-child(2n+1){
+			clear:left;
+		}
+	}
+	@include media(poppa){
+		width:33.33%;
+		&:nth-child(2n+1){
+			clear:none;
+		}
+		&:nth-child(3n+1){
+			clear:left;
+		}
+	}
 }
 
 .content{

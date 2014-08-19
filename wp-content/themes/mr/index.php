@@ -18,7 +18,7 @@ get_header(); ?>
 
 	<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
-			<div class="feed-item">
+			<div class="feed-item-blog">
 				<a href="<?php the_permalink(); ?>">
 					<?php the_post_thumbnail( 'gallery' ); ?>
 				</a>

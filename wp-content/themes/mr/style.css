@@ -745,16 +745,38 @@ header.site-header {
 
 /* line 53, scss/_content.scss */
 .feed-item-blog {
-  float: clear; }
+  padding: 0.5em; }
+  /* line 56, scss/_content.scss */
+  .feed-item-blog img {
+    display: block;
+    max-width: 100%;
+    height: auto; }
+  @media screen and (min-width: 769px) {
+    /* line 53, scss/_content.scss */
+    .feed-item-blog {
+      width: 50%; }
+      /* line 64, scss/_content.scss */
+      .feed-item-blog:nth-child(2n+1) {
+        clear: left; } }
+  @media screen and (min-width: 1025px) {
+    /* line 53, scss/_content.scss */
+    .feed-item-blog {
+      width: 33.33%; }
+      /* line 70, scss/_content.scss */
+      .feed-item-blog:nth-child(2n+1) {
+        clear: none; }
+      /* line 73, scss/_content.scss */
+      .feed-item-blog:nth-child(3n+1) {
+        clear: left; } }
 
-/* line 57, scss/_content.scss */
+/* line 79, scss/_content.scss */
 .content {
   padding: 1em;
   background: white;
   color: #002032;
   pointer-events: auto; }
   @media screen and (min-width: 769px) {
-    /* line 57, scss/_content.scss */
+    /* line 79, scss/_content.scss */
     .content {
       position: absolute;
       top: 0;
@@ -766,41 +788,41 @@ header.site-header {
       -webkit-overflow-scrolling: touch;
       transition: 1s; } }
   @media screen and (max-height: 30em) {
-    /* line 57, scss/_content.scss */
+    /* line 79, scss/_content.scss */
     .content {
       position: static; } }
-  /* line 77, scss/_content.scss */
+  /* line 99, scss/_content.scss */
   .content img {
     max-width: 100%;
     height: auto; }
 
-/* line 84, scss/_content.scss */
+/* line 106, scss/_content.scss */
 .feed .content {
   position: static;
   overflow: hidden; }
 
-/* line 90, scss/_content.scss */
+/* line 112, scss/_content.scss */
 .content-header h1 {
   margin: 0 3rem 0 0;
   font-weight: 300; }
-/* line 94, scss/_content.scss */
+/* line 116, scss/_content.scss */
 .content-header a {
   text-decoration: none; }
 
 @media screen and (min-width: 769px) {
-  /* line 104, scss/_content.scss */
+  /* line 126, scss/_content.scss */
   .hidden {
     top: auto;
     overflow-y: hidden; }
-    /* line 108, scss/_content.scss */
+    /* line 130, scss/_content.scss */
     .hidden .content-header {
       cursor: pointer; }
-    /* line 111, scss/_content.scss */
+    /* line 133, scss/_content.scss */
     .hidden .content-full {
       height: 0;
       overflow: hidden; } }
 @media screen and (max-height: 30em) {
-  /* line 104, scss/_content.scss */
+  /* line 126, scss/_content.scss */
   .hidden {
     height: auto;
     overflow-y: scroll;
@@ -808,7 +830,7 @@ header.site-header {
     -webkit-overflow-scrolling: touch; } }
 
 @media screen and (min-width: 769px) {
-  /* line 123, scss/_content.scss */
+  /* line 145, scss/_content.scss */
   .visible {
     top: 0;
     transition: 1s;
@@ -816,23 +838,23 @@ header.site-header {
     /* has to be scroll, not auto */
     -webkit-overflow-scrolling: touch; } }
 
-/* line 138, scss/_content.scss */
+/* line 160, scss/_content.scss */
 .show-content {
   display: none; }
 
-/* line 143, scss/_content.scss */
+/* line 165, scss/_content.scss */
 .content-toggle {
   display: none; }
   @media screen and (min-width: 769px) {
-    /* line 143, scss/_content.scss */
+    /* line 165, scss/_content.scss */
     .content-toggle {
       display: block; } }
     @media screen and (min-width: 769px) and (max-height: 30em) {
-      /* line 143, scss/_content.scss */
+      /* line 165, scss/_content.scss */
       .content-toggle {
         display: none; } }
 
-/* line 154, scss/_content.scss */
+/* line 176, scss/_content.scss */
 .meta {
   background-color: #dd773f;
   color: white;
@@ -840,7 +862,7 @@ header.site-header {
   margin: 0.5em 0;
   font-size: small; }
 
-/* line 161, scss/_content.scss */
+/* line 183, scss/_content.scss */
 blockquote {
   font-style: italic;
   border-left: 3px solid #dd773f;

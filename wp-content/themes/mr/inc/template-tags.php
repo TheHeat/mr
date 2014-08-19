@@ -19,7 +19,7 @@ function mr_paging_nav() {
 	?>
 	<nav class="navigation paging-navigation" role="navigation">
 		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'mr' ); ?></h1>
-		<div class="nav-links">
+		<div class="nav-links feed-item-blog">
 
 			<?php if ( get_next_posts_link() ) : ?>
 			<div class="nav-previous"><?php next_posts_link( __( '<span class="post-image-nav-left"></span><span class="meta-nav">Older posts</span>', 'mr' ) ); ?></div>

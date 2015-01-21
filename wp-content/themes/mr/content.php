@@ -16,16 +16,16 @@
 			</a>
 		<?php endif; ?>
 		<div class="meta">
-			<p>Posted: <?php the_date() ?></p>
-		</div>   
+			Posted: <?php the_date() ?>
+		</div>
 	</header>
 
 	<?php if (is_singular()): ?>
 		<div class="content-full">
 	    	<?php the_content(); ?>
    			<?php edit_post_link( __( 'Edit', 'mr' ), '<span class="edit-link">', '</span>' ); ?>
-	    </div>	
+	    </div>
     	<?php wp_link_pages( array('before' => '<div class="page-links">' . __( 'Pages:', 'mr' ),'after'  => '</div>',));?>
     <?php endif ?>
-		
+
 </article>

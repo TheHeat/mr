@@ -9,8 +9,8 @@
 	<header class="content-header">
 		<h1 class="page-title"><?php the_title(); ?></h1>
 		<div class="meta">
-			<p>Posted: <?php the_date() ?></p>
-		</div>   
+			Posted: <?php the_date(); ?>
+		</div>
 	</header>
 
 	<?php if (is_singular()): ?>

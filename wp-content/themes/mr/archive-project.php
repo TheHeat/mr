@@ -15,7 +15,7 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<div class="feed-item">
 				<a href="<?php the_permalink(); ?>">
-					<?php the_post_thumbnail( 'gallery' ); ?>
+					<?php the_post_thumbnail( 'portfolio' ); ?>
 				</a>
 				<?php get_template_part( 'content', get_post_type() ); ?>	
 			</div>

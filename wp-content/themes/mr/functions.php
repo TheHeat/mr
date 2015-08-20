@@ -184,4 +184,5 @@ function sort_projects_by_date( $query ) {
 
 add_action( 'pre_get_posts', 'sort_projects_by_date' );
 
+add_image_size('portfolio', 800, 450, true);
 add_image_size('gallery', 1600, 900, array('center','top'));

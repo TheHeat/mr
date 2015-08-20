@@ -25,3 +25,4 @@ wp-content/themes/*
 
 sftp-config.json
 wp-config-sample.php
+.DS_Store
